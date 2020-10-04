@@ -7,7 +7,7 @@ for first element or var && and ||
 : creates series
 "
 #..............................#
-"data types
+"data types in R programming 
 -vectors
 -lists
 -matrices
@@ -30,20 +30,20 @@ c(1,2,3)->num
 print(num)
 
 
-#lists
+#lists in R
 "collection of vectors, functions, others lists etc"
 list1<-list(sin,5,c("apple","orange","banana"))
 print(list1)
 
 
-#factors
+#factors R
 "stores vector along with labels"
 colour=c('red','green','red','red','green','red')
 factorr=factor(colour)
 print(factorr)
 print(nlevels(factorr))
 
-#data frames
+#data frames in R
 "collection of different modes of data"
 
 school<-data.frame(
@@ -51,20 +51,19 @@ school<-data.frame(
   sections=c(4,5,2,3,1),
   strength=c(50,55,45,49,52)
 )
+# print school values
 print(school)
-
-
 sections=c(4,5,2,3,12)
 print(sections[0])
-
 sum=0
 v=c(1:10)
 for (i in v) {
   sum=sum+i
 }
+
 print(sum)
 
-#create a matrix
+#create a matrix in R
 mat<-matrix(1:4,nrow = 4,ncol = 4)
 print(mat)
 
@@ -72,7 +71,8 @@ s=1
 #switch
 sw<-switch(
   2*s,
-  print("nice"),
-  "second"
+  print("Nice"),
+  "Second"
 )
 print(sw)
+#Happy Progrogramming
